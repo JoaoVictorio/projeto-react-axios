@@ -23,7 +23,7 @@ const Home = () => {
 
       const data = response.data;
 
-      console.log(data);
+      setposts(posts);
     } catch (error) {
       console.log(error);
     }
@@ -38,8 +38,11 @@ const Home = () => {
 
 
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <h1>Últimos Posts</h1>
+      {posts.length === 0 ? <p>Carregando...</p> : <p>Carregou</p>}
+    </div>
+  );
+};
 
 export default Home
