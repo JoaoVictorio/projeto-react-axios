@@ -1,10 +1,13 @@
+import { Outlet } from "react-router-dom";
 import './App.css'
 
 function App() {
 
   return (
-   <div>
-      <h1>React Axios</h1>
+   <div className="App">
+    <div className="container">
+      <Outlet />
+    </div>
    </div>
   )
 }
