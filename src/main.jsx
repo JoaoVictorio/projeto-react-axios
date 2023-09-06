@@ -4,6 +4,10 @@ import App from './App.jsx'
 
 import { createBrowserRoute, RouterProvider, Route } from 'react-router-dom';
 
+//  páginas
+import Home from "./routes/Home.jsx";
+import NewPost from './routes/NewPost.jsx';
+
 import './index.css'
 
 // Obj de configuração
@@ -14,9 +18,11 @@ const router = createBrowserRoute([
   children: [
     {
       path: "/"
+      element: <Home />,
     },
     {
       path: "/new"
+      element: <NewPost />,
     },
   ],
 },
