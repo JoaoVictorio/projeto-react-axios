@@ -12,7 +12,7 @@ const NavBar = () => {
           <Link to={`/`}>Home</Link>
         </li>
         <li>
-          <Link to={`/`}>Novo Post</Link>
+          <Link to={`/new`} className="new-btn">Novo Post</Link>
         </li>
       </ul>
     </nav>
